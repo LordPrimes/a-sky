@@ -10,12 +10,21 @@ class TzController extends Controller
     public function index(){
 
 
-        $doc = hQuery::fromFile('https://twitter.com/IHateMy95565730');
+        $doc = hQuery::fromFile('https://twitter.com/hashtag/Russia?src=tren');
         
-        $img = $doc->find('img:parent');
+ 
+        
+    
 
+ 
   
+        $data =[ 
+            'img' => $img
+            
+        ];
 
-        return $img;
+        return view('tz')->with($data);
 }
+
+
 }

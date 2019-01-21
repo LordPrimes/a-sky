@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('test', 'TzController@index');
+Route::post('public/test', 'TzController@like');
