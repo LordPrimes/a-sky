@@ -10,20 +10,15 @@ class TzController extends Controller
     public function index(){
 
 
-        $doc = hQuery::fromFile('https://twitter.com/hashtag/Russia?src=tren');
-        
- 
-        
-    
-
- 
-  
-        $data =[ 
-            'img' => $img
-            
-        ];
-
-        return view('tz')->with($data);
+        function perevernuty($str)
+        {
+                for($i=0;$i<strlen($str);$i++)
+                {
+                        $strok = $str[$i].$strok;
+                }
+                return $strok;
+        }
+        echo perevernuty('А роза упала на лапу Азора');
 }
 
 
